@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: roboto;
+}
+
+.logo-container {
+  align-self: flex-start;
+  margin: 22px 0 22px 10px;
+}
+.app-logo {
+  width: 175px;
+  text-align: start;
+}
+
+.top-image {
+  width: 100%;
+}
+
+.input-container {
+  background-color: #5763a5;
+  width: 90%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.password-container {
+  background-color: #454f84;
+  width: 90%;
+  padding: 12px;
+  border-radius: 9px;
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.icon {
+  width: 24px;
+  margin: 10px;
+}
+
+.input-text-container {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  width: 90%;
+}
+
+.input-bar {
+  height: 100%;
+  border: none;
+  border-left: solid 1px #c3caea;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.button {
+  height: 30px;
+  width: 80px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.output-container {
+  background-color: #5763a5;
+  width: 90%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.password-count-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.password-text {
+  font-size: 12px;
+}
+
+.search-icon {
+  width: 22px;
+  margin: 7px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.search-bar {
+  height: 100%;
+  border: none;
+  border-left: solid 1px #c3caea;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 4px;
+  outline: none;
+  width: 50%;
+}
+
+.password-text {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.count-style {
+  height: 24px;
+  width: 24px;
+  border: solid 1px #ffffff;
+  border-radius: 22px;
+  margin-right: 22px;
+  padding: 2px 8px 2px 7px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.label-text {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.no-class-name-text {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bottom-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+  }
+  .image-container {
+    order: 1;
+  }
+  .bottom-img {
+    width: 50%;
+    align-self: center;
+  }
+  .no-password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #change-img {
+    content: url(https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png);
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+  }
+}
+
+.list-container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
